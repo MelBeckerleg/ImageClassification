@@ -1,7 +1,6 @@
-function [a] = Intensity(k,n)
-%INTENSITY Outputs the number of recognised labels 
-%in the image classification of n test images, 
-%using the k-nearest neighbors algorithm. and Euclidean metric
+function [w] = Intensity(k,n)
+%INTENSITY Outputs the number of errors in the image classification of n
+%test images, using the k-nearest neighbors algorithm.
 
 %Read the binary files by converting them into .mat files:
 
@@ -18,8 +17,8 @@ tic
 
 Idx = knnsearch(trainimages',testimages(:,1:n)','K',k);
 
-%Initialize vectors to store the labels of the 
-%matched images from within the training data:
+%Initialize vectors to store the labels of the matched 
+% images from within the training set:
 
 Idx1 = zeros(n,k);
 
@@ -37,5 +36,18 @@ a = (mode(Idx1'))';
 
 toc
 
+%Initialize a vector for storing the error:
+
+v = zeros(n,1);
+
+%Compare with the test labels:
+
+for i =1:n
+    v(i) = a(i)-testlabels(i);
+end
+
+%Output the number of errors:
+
+w = nnz(v);
 end
 
