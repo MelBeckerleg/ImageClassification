@@ -1,6 +1,6 @@
 function [w] = Intensity(k,n,'metric')
 %INTENSITY Outputs the number of errors in the image classification of n
-%test images, using the k-nearest neighbors algorithm and the specified metric.
+%test images, using the k-nearest neighbors algorithm and the specified metric, ie 'correlation'.
 
 %Read the binary files by converting them into .mat files:
 
