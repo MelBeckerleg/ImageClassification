@@ -10,7 +10,9 @@ This set of files includes:
 
 -Intensityerror.m : finds the error of classification using the intensity method for <m> images.
 
--pca.m : returns the error when Principal Component Analysis is used to select the <k> feature vectors corresponding to the <k>th largest eignvalues of <m> test images.
+Intensityerrorcorr.m - explores the use of different metrics
+
+-pcaerror.m : returns the error when Principal Component Analysis is used to select the <k> feature vectors corresponding to the <k>th largest eignvalues of <m> test images.
 
 -kmeanserror.m : returns the error when the kmeans algorithm is applied to classify <m> images without use of training data
 
