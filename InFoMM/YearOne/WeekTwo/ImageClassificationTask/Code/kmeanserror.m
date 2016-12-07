@@ -1,7 +1,6 @@
 function [kmeanserror] = kmeanserror(m)
     % clusters m images, assigns a cluster label according to the mode
     % and returns the error between assigned label and the actual label.
-
     
 %Read the binary files by converting them into .mat files:
 
@@ -22,7 +21,8 @@ idx=kmeans(testimages(:,1:m)',10);
 class=zeros(10,m);
 j=1;
 
-%find labels
+%find labels, storing them in a matrix where successive columns are generated 
+%when elements within a cluster have different original labels
 for i=1:m
    if class(idx(i),j) == 0
     class(idx(i),j)=testlabels(i)+1;
@@ -43,14 +43,10 @@ error(i)=mmc(idx(i))-testlabels(i)-1;
 end
 kmeanserror=nnz(error);
 
-%This error is pretty high though!
+%This error is pretty high though. We also end up with labels unused
 
 
 %% Visualising the assignment of labels
-
-% This way we end up with some labels unused!
-% Can we visualise the distribution instead to see if 
-% there is a better way to assign every label?
 
 % for each i we have the label co-ordinate which gives the original 
 % label and the cluster it was assigned to:
@@ -63,8 +59,10 @@ end
  % number of elements with original label i that are allocated to cluster 
  % j.
  
+ %initial cluster matrix
  cluster=zeros(10,10);
 
+ %allocate values
  for i=1:10
      for j=1:10
     cluster(i,j)=length(labcor(labcor==10*i+j));
