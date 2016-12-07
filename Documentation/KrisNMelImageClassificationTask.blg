@@ -1,0 +1,66 @@
+This is BibTeX, Version 0.99d (TeX Live 2015/Debian)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: KrisNMelImageClassificationTask.aux
+The style file: plain.bst
+Database file #1: bibtry.bib
+I was expecting a `,' or a `}'---line 3 of file bibtry.bib
+ : 
+ : http://ufldl.stanford.edu/wiki/index.php/Using_the_MNIST_Dataset
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+Warning--entry type for "MNIST" isn't style-file defined
+--line 7 of file bibtry.bib
+I was expecting a `,' or a `}'---line 8 of file bibtry.bib
+ : 
+ : author: Yann LeCun, Corinna Cortes, Christopher J.C. Burges,
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+Illegal end of database file---line 13 of file bibtry.bib
+ : http://faculty.iiit.ac.in/~mkrishna/PrincipalComponents.pdf
+ :                                                            
+I'm skipping whatever remains of this entry
+Warning--I didn't find a database entry for "ahu61"
+Warning--I didn't find a database entry for "PCA"
+Warning--to sort, need author or key in MNIST
+You've used 1 entry,
+            2118 wiz_defined-function locations,
+            502 strings with 4062 characters,
+and the built_in function-call counts, 157 in all, are:
+= -- 8
+> -- 1
+< -- 0
++ -- 1
+- -- 0
+* -- 7
+:= -- 20
+add.period$ -- 1
+call.type$ -- 1
+change.case$ -- 2
+chr.to.int$ -- 0
+cite$ -- 2
+duplicate$ -- 7
+empty$ -- 24
+format.name$ -- 0
+if$ -- 34
+int.to.chr$ -- 0
+int.to.str$ -- 1
+missing$ -- 0
+newline$ -- 6
+num.names$ -- 0
+pop$ -- 8
+preamble$ -- 1
+purify$ -- 2
+quote$ -- 0
+skip$ -- 12
+stack$ -- 0
+substring$ -- 5
+swap$ -- 1
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 4
+warning$ -- 1
+while$ -- 0
+width$ -- 2
+write$ -- 6
+(There were 3 error messages)

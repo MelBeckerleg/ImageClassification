@@ -1,0 +1,29 @@
+Image Classification 
+
+Working with MNIST image files for handwritten digits (available from: http://yann.lecun.com/exdb/mnist/), exploring different methods for classifying test images, with both a training set and using the kmeans algorithm. 
+
+This set of files includes:
+
+-Openimages: follder containing MNIST data Database files and StartHere file for how to open in Matlab
+
+-Intensity.m : classifies <m> test images by comparison with the test data, using different norms with the knn algorithm
+
+-Intensityerror.m : finds the error of classification using the intensity method for <m> images.
+
+-pca.m : returns the error when Principal Component Analysis is used to select the <k> feature vectors corresponding to the <k>th largest eignvalues of <m> test images.
+
+-kmeanserror.m : returns the error when the kmeans algorithm is applied to classify <m> images without use of training data
+
+Key Terms:
+
+Training Data images: used as a reference to classify test data images.
+
+Training data labels: record the digit that corresponds to each image in the training data 
+
+Test Data: images to be identified, by comparison with the training data.
+
+Test data labels: record the digit that corresponds to each image in the test data (used for identifying error).
+
+Intensity : matrix containing all the original pixel data in its original form.
+
+For a full explanation, see TaskBrief. 
